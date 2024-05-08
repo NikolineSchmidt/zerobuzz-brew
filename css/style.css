@@ -4,13 +4,13 @@
 @import url('card.css');
 @import url('loebeklub.css');
 @import url('merch.css');
+@import url('font.css');
 
 * {
     box-sizing: border-box;
   }
   body {
     margin: 0;
-    font-family: "Proxima Nova", sans-serif;
     background-color: rgba(243, 233, 213, 1);
   }
 

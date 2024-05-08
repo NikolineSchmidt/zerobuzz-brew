@@ -1,0 +1,15 @@
+/* stylesheet samlet - så jeg kun skal linke til ét */
+@import url('variabler.css');
+@import url('nav.css');
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: "Proxima Nova", sans-serif;
+    background-color: rgba(243, 233, 213, 1);
+  }
+
+
+  

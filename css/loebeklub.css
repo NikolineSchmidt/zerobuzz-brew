@@ -1,0 +1,32 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content {
+    width: 60%;
+}
+
+.image {
+    width: 30%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+

@@ -29,4 +29,39 @@ article {
     border-radius: 5px;
 }
 
-
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Centrer overskriften */
+    h1 {
+        text-align: center; 
+    }
+    
+    article {
+        display: flex;
+        flex-direction: column; /* Ændre layout til kolonne for mobil */
+        align-items: center; /* Centrer indholdet */
+        max-width: 90%; /* Gør artiklen lidt bredere for bedre læsbarhed */
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .content {
+        width: 100%; /* Gør indholdet fuld bredde */
+    }
+    
+    .image {
+        width: 100%; /* Gør billedet fuld bredde */
+        max-height: auto; /* Tillad billedet at skalere proportionalt */
+        object-fit: contain; 
+        margin-top: 20px; /* Tilføj lidt afstand til toppen af billedet */
+        object-fit: cover;
+    }
+}    

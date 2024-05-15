@@ -9,7 +9,7 @@ h1{
     justify-content: center;
 }
 
-section {
+section .club {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +44,7 @@ section {
         text-align: center; 
     }
     
-    section {
+    section .club {
         display: flex;
         flex-direction: column; /* Ændre layout til kolonne for mobil */
         align-items: center; /* Centrer indholdet */

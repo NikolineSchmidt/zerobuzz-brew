@@ -4,7 +4,8 @@ header {
     background-color: rgba(243, 233, 213, 1);
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #000;
 }
 
 .nav-title {
@@ -31,6 +32,7 @@ header {
     text-decoration: none;
     color: rgba(14, 17, 17, 1);
     cursor: pointer;
+    padding: 45px 30px;
 }
 
 header #nav-check {
@@ -39,12 +41,11 @@ header #nav-check {
  
 /* undermenu */
 .nav-sub-menu {
-    display: block;
+    display: none;
     position: absolute;
-    top: 110px; /* Justér afstanden fra hovedmenupunktet */
+    top: 90px; /* Justér afstanden fra hovedmenupunktet */
     left: 0;
     background-color: rgba(243, 233, 213, 1);
-    border-top: 1px solid #000;
     width: 100%;
     padding: 10px; /* Mindsk padding for at gøre undermenuen tættere på hovedmenupunktet */
     font-family: "Montserrat", sans-serif;
@@ -53,15 +54,19 @@ header #nav-check {
     font-size: 50px;
     font-style: normal;
     z-index: 100; /* Sørg for at undermenuen ligger øverst */
-    max-height: 0; /* Start med at skjule undermenuen */
+    /* max-height: 0;  */
     overflow: hidden; /* Skjul eventuelt indhold, der er større end max-height */
     transition: max-height 0.3s ease-in-out; /* Tilføj en glidende overgang */
 }
 
 /* Når musen er over et menupunkt, vises undermenuerne */
+.nav-list-item:hover{
+    text-decoration: underline;
+}
 .nav-list-item:hover .nav-sub-menu,
 .nav-sub-menu:hover {
-    max-height: 1000px; /* Vis undermenuen ved at øge max-height */
+    display: block;
+    /* max-height: 1000px;  */
 }
   
 .nav-sub-menu-item {
@@ -70,21 +75,12 @@ header #nav-check {
 
 }
 
-.nav-sub-menu-item:after {
-    content: '';
-    width: 0px;
-    height: 2px;
-    display: block;
-    background: black;
-    transition: 300ms;
-}
-
-.nav-sub-menu-item:hover:after {
-    width:50%;
+.nav-sub-menu-item:hover {
+    text-decoration: underline;
 }
   
   .nav-sub-menu-item a {
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
   }
 
@@ -135,19 +131,26 @@ header #nav-check {
     }
 
     .nav-sub-menu {
+        display: block;
+        max-height: 0; 
         position: relative;
         top: 20px; /* Justér afstanden fra hovedmenupunktet */
         border-top: none;
         font-size: 20px;
         margin-bottom: 12px;
     }
-
+    .nav-list-item:hover .nav-sub-menu,
+    .nav-sub-menu:hover {
+        max-height: 1000px; 
+    }
     .nav-sub-menu-item {
         margin-top: 10px;
     }
-
-    .nav-sub-menu-item:hover:after {
-        width:0%;
+    .nav-list-item:hover{
+        text-decoration: none;
+    }
+    .nav-sub-menu-item:hover {
+        text-decoration: none;
     }
 } 
 

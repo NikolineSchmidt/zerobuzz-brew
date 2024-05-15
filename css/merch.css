@@ -6,7 +6,7 @@
     justify-content: center;
     box-sizing: none;
 }
-.boks> section {
+.boks section {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -26,10 +26,6 @@
     border-radius: 5%;
     width: 90%;
     margin: 0rem 1rem;
-
-}
-
-.boks .merch {
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -38,40 +34,6 @@
 
 @media (max-width: 768px) {
 .boks {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    box-sizing: none;
-}
-
-.boks> section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.boks article {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-/* Merch er sat på række to og to med tekst under */
-.merch {
-    border-radius: 5%;
-    width: 90%;
-    margin: 0rem 1rem;
-
-}
-
-.boks .merch {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
 }
 }

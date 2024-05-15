@@ -1,16 +1,6 @@
-body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-h1{
+article.content {
     display: flex;
-    justify-content: center;
-}
-
-section .club {
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     max-width: 800px;
@@ -18,50 +8,36 @@ section .club {
     padding: 20px;
 }
 
-.content {
+section {
     width: 60%;
+    padding: 20px 40px; /* Tilføj mere luft omkring teksten */
 }
 
-.image {
-    width: 30%;
+figure{
+    margin: 0;
+}
+
+figure img {
     max-height: 300px;
     object-fit: cover;
     border-radius: 5px;
+    margin: 1rem 1rem;
 }
 
+
+/* Mobil layout */
 @media (max-width: 768px) {
-    header {
-        padding: 1rem;
-    }
-    body {
-        font-family: "Montserrat", sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    
-    /* Centrer overskriften */
-    h1 {
-        text-align: center; 
-    }
-    
-    section .club {
-        display: flex;
+    article.content {
         flex-direction: column; /* Ændre layout til kolonne for mobil */
-        align-items: center; /* Centrer indholdet */
         max-width: 90%; /* Gør artiklen lidt bredere for bedre læsbarhed */
-        margin: 20px auto;
-        padding: 20px;
     }
-    
-    .content {
+
+    section {
         width: 100%; /* Gør indholdet fuld bredde */
     }
-    
-    .image {
-        width: 100%; /* Gør billedet fuld bredde */
-        max-height: auto; /* Tillad billedet at skalere proportionalt */
-        object-fit: contain; 
-        margin-top: 20px; /* Tilføj lidt afstand til toppen af billedet */
-        object-fit: cover;
+
+    figure img {
+        width: 90%; /* Gør billedet fuld bredde */
+        max-height: 100%; 
     }
-}    
+}

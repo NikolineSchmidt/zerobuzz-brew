@@ -1,6 +1,9 @@
+/* Sætter box-sizing til alle elementer */
 * {
   box-sizing: border-box;
 }
+
+/* Styling af body-elementet */
 body {
   margin: 0;
   background-color: rgba(243, 233, 213, 1);

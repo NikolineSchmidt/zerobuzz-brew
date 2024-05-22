@@ -1,3 +1,4 @@
+/* Styling af container med klassen "boks" */
 .boks {
     display: flex;
     flex-direction: row;
@@ -6,6 +7,8 @@
     justify-content: center;
     box-sizing: none;
 }
+
+/* Styling af sektioner inden for containeren */
 .boks section {
     display: flex;
     flex-direction: row;
@@ -14,6 +17,7 @@
     align-items: center;
 }
 
+/* Styling af artikler inden for containeren */
 .boks article {
     display: flex;
     flex-direction: column;
@@ -21,9 +25,10 @@
     justify-content: center;
     align-items: center;
 }
-/* Merch er sat på række to og to med tekst under */
+
+/* Styling af elementer med klassen "merch" */
 .merch {
-    border-radius: 5%;
+    border-radius: 5%; /* Afrundede hjørner */
     width: 90%;
     margin: 0rem 1rem;
     display: flex;
@@ -31,9 +36,9 @@
     margin: 10px;
 }
 
-
+/* Media query for skærme op til 768px i bredden */
 @media (max-width: 768px) {
 .boks {
-    flex-direction: column;
+    flex-direction: column; /* Ændrer layout til lodret, når skærmstørrelsen er mindre end 768px */
 }
 }

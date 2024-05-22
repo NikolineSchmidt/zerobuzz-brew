@@ -1,3 +1,4 @@
+/* Styling af artiklelement med klassen "content" */
 article.content {
     display: flex;
     flex-direction: row;
@@ -8,15 +9,18 @@ article.content {
     padding: 20px;
 }
 
+/* Styling af sektions-elementer */
 section {
     width: 60%;
-    padding: 20px 40px; /* Tilføj mere luft omkring teksten */
+    padding: 20px 40px; 
 }
 
+/* Styling af figur-elementer */
 figure{
     margin: 0;
 }
 
+/* Styling af billeder inden for figurer */
 figure img {
     max-height: 300px;
     object-fit: cover;

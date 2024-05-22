@@ -11,8 +11,8 @@ article.content {
 
 /* Styling af sektions-elementer */
 section {
-    width: 60%;
-    padding: 20px 40px; 
+    width: 51%;
+    padding: -1px 40px; 
 }
 
 /* Styling af figur-elementer */
@@ -22,7 +22,7 @@ figure{
 
 /* Styling af billeder inden for figurer */
 figure img {
-    max-height: 300px;
+    max-height: 410px;
     object-fit: cover;
     border-radius: 5px;
     margin: 1rem 1rem;

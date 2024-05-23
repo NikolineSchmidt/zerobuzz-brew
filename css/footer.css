@@ -48,7 +48,7 @@
   }
   .social ul li {
     display: inline-block;
-    padding-right: 5px !important;
+    padding-right: 10px !important;
   }
   
   .footer .col ul li:hover {
@@ -59,10 +59,35 @@
   }
 
   .social ul li i{
-    font-size: 20px;
+    font-size: 27px;
     color: rgba(243, 233, 213, 1);
   }
   
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter button {
+    padding: 10px;
+    background-color: #f3e9d5;
+    color: #424547;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #e0d4c3;
+  }
  
   @media (max-width: 768px) {
     .footer {
@@ -77,4 +102,8 @@
     .footer .col ul li {
       font-size: 13px;
     }
+    .newsletter {
+        width: 100%;
+      }
+    
   }

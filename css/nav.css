@@ -39,7 +39,7 @@ header {
 header #nav-check {
     display: none;
 }
- 
+
 /* undermenu */
 .nav-sub-menu {
     display: none;
@@ -55,7 +55,6 @@ header #nav-check {
     font-size: 50px;
     font-style: normal;
     z-index: 100; /* Sørg for at undermenuen ligger øverst */
-    /* max-height: 0;  */
     overflow: hidden; /* Skjul eventuelt indhold, der er større end max-height */
     transition: max-height 0.3s ease-in-out; /* Tilføj en glidende overgang */
 }
@@ -68,13 +67,11 @@ header #nav-check {
 .nav-list-item:hover .nav-sub-menu,
 .nav-sub-menu:hover {
     display: block;
-    /* max-height: 1000px;  */
 }
   
 .nav-sub-menu-item {
     display: block;
     margin-top: 20px;
-
 }
 
 .nav-sub-menu-item:hover {
@@ -82,11 +79,10 @@ header #nav-check {
     color: #424547;
 }
   
-  .nav-sub-menu-item a {
+.nav-sub-menu-item a {
     padding: 10px 10px;
     cursor: pointer;
-  }
-
+}
 
 /* Styling til mobil */
 @media (max-width: 768px) {
@@ -109,8 +105,11 @@ header #nav-check {
     .nav-btn label span {
         display: block;
         width: 25px;
-        height: 10px;
-        border-top: 2px solid #424547;
+        height: 3px; /* Ændret fra 10px til 3px */
+        margin-bottom: 5px; /* Tilføjet margin mellem linjerne */
+        background: #424547;
+        border-radius: 3px; /* Gør linjerne runde */
+        transition: all 0.3s ease-in-out; /* Tilføjet overgang */
     }
     .nav-list {
         position: absolute;
@@ -131,6 +130,15 @@ header #nav-check {
     }
     header #nav-check:checked ~ .nav-list {
         height: calc(100vh - 50px);
+    }
+    header #nav-check:checked ~ .nav-btn label span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 6px);
+    }
+    header #nav-check:checked ~ .nav-btn label span:nth-child(2) {
+        opacity: 0;
+    }
+    header #nav-check:checked ~ .nav-btn label span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     .nav-sub-menu {
@@ -155,7 +163,4 @@ header #nav-check {
     .nav-sub-menu-item:hover {
         text-decoration: none;
     }
-} 
-
-
-
+}

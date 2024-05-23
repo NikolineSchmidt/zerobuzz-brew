@@ -1,4 +1,4 @@
-  /* STYLES SPECIFIC TO FOOTER  */
+  /* Styling for hele footer-sektionen */
   .footer {
     display: flex;
     flex-wrap: wrap;
@@ -6,6 +6,8 @@
     height: 200px;
     background-color: #424547;
   }
+
+  /* Styling for kolonnerne i footeren */
   .footer .col {
     width: 190px;
     height: auto;
@@ -15,6 +17,8 @@
     -moz-box-sizing: border-box;
     padding: 0px 20px 20px 20px;
   }
+
+  /* Styling for kolonneoverskrifter */
   .footer .col h2 {
     margin: 0;
     padding: 0;
@@ -27,11 +31,15 @@
     text-transform: uppercase;
     letter-spacing: 0.250em;
   }
+
+  /* Styling for lister i kolonner */
   .footer .col ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+
+  /* Styling for listeelementer i kolonner */
   .footer .col ul li {
     color: rgba(243, 233, 213, 1);
     font-size: 14px;
@@ -43,11 +51,14 @@
     -webkit-transition: .2s;
     -moz-transition: .2s;
   }
+
+  /* Specifik styling for sociale ikoner */
   .social ul li {
     display: inline-block;
     padding-right: 10px !important;
   }
   
+  /* Hover-effekt for listeelementer */
   .footer .col ul li:hover {
     color: #fff;
     transition: .1s;
@@ -55,16 +66,19 @@
     -moz-transition: .1s;
   }
 
+  /* Styling for ikoner i sociale medier */
   .social ul li i{
     font-size: 27px;
     color: rgba(243, 233, 213, 1);
   }
   
+  /* Styling for nyhedsbrevets formular */
   .newsletter form {
     display: flex;
     flex-direction: column;
   }
   
+  /* Styling for email inputfelt */
   .newsletter input[type="email"] {
     padding: 10px;
     margin-bottom: 10px;
@@ -72,6 +86,7 @@
     border-radius: 5px;
   }
   
+  /* Styling for knappen i nyhedsbrevets formular */
   .newsletter button {
     padding: 10px;
     background-color: #f3e9d5;
@@ -82,10 +97,12 @@
     transition: background-color 0.3s;
   }
   
+  /* Hover-effekt for knappen */
   .newsletter button:hover {
     background-color: #e0d4c3;
   }
  
+  /* Responsiv styling for små skærme */
   @media (max-width: 768px) {
     .footer {
         height: 350px;

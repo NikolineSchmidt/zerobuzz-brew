@@ -5,16 +5,17 @@ header {
     display: flex;
     align-items: center;
     padding-top: 30px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #424547;
 }
 
 .nav-title {
     font-size: 22px;
-    color: rgba(14, 17, 17, 1);
+    color: #424547;
     padding-left: 1rem;
 }
 
 .nav-list {
+    z-index: 200;
     display: flex;
     gap: 2rem;
 }
@@ -30,7 +31,7 @@ header {
 
 .nav-list-item a {
     text-decoration: none;
-    color: rgba(14, 17, 17, 1);
+    color: #424547;
     cursor: pointer;
     padding: 45px 30px;
 }
@@ -43,7 +44,7 @@ header #nav-check {
 .nav-sub-menu {
     display: none;
     position: absolute;
-    top: 90px; /* Justér afstanden fra hovedmenupunktet */
+    top: 82px; /* Justér afstanden fra hovedmenupunktet */
     left: 0;
     background-color: rgba(243, 233, 213, 1);
     width: 100%;
@@ -61,6 +62,7 @@ header #nav-check {
 
 /* Når musen er over et menupunkt, vises undermenuerne */
 .nav-list-item:hover{
+    color: #424547;
     text-decoration: underline;
 }
 .nav-list-item:hover .nav-sub-menu,
@@ -77,6 +79,7 @@ header #nav-check {
 
 .nav-sub-menu-item:hover {
     text-decoration: underline;
+    color: #424547;
 }
   
   .nav-sub-menu-item a {
@@ -107,7 +110,7 @@ header #nav-check {
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 2px solid rgba(14, 17, 17, 1);
+        border-top: 2px solid #424547;
     }
     .nav-list {
         position: absolute;

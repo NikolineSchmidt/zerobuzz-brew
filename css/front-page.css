@@ -1,4 +1,5 @@
 /* Generel styling for forsiden */
+/* Billede i forside-sektionen fylder hele bredden og justeres automatisk i højde */
 .front-page img {
     width: 100%;
     height: auto;
@@ -12,6 +13,7 @@
     padding: 2rem;
 }
 
+/* Styling for individuelle informationssektioner */
 .info-section {
     display: flex;
     flex-direction: row-reverse;
@@ -20,52 +22,62 @@
     padding: 100px 0px;
 }
 
+/* Styling for figur-elementerne i informationssektionerne */
 .info-section figure {
     width: 50%;
     margin: 0;
 }
 
+/* Styling for billederne i informationssektionerne */
 .info-section img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
+/* Styling for tekstsektionen i informationssektionerne */
 .info-section .text {
     width: 50%;
 }
 
+/* Styling for overskrifter i tekstsektionen */
 .info-section .text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
+/* Styling for tekstparagraffer i tekstsektionen */
 .info-section .text p {
     font-size: 1rem;
     line-height: 1.5;
 }
 
-/* Styling for reversed sektion */
+/* Styling for omvendte informationssektioner */
 .info-section.reverse {
     flex-direction: row-reverse;
 }
 
 /* Responsiv styling */
+/* Tilpasninger til mindre skærme */
 @media (max-width: 768px) {
+     /* Informationssektioner bruger kolonneretning og mindre lodret padding */
     .info-section {
         flex-direction: column-reverse;
         padding: 20px 0px;
     }
 
+    /* Omvendte informationssektioner bruger kolonneretning */
     .info-section.reverse {
         flex-direction: column;
     }
 
+    /* Figur- og tekstsektioner fylder hele bredden */
     .info-section figure,
     .info-section .text {
         width: 100%;
     }
 
+     /* Tekstsektionen får margin ovenpå */
     .info-section .text {
         margin-top: 1rem;
     }

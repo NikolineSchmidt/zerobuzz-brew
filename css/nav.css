@@ -1,4 +1,5 @@
 /* Hele menuen */
+/* Styling for header-elementet */
 header {
     width: 100%;
     background-color: rgba(243, 233, 213, 1);
@@ -8,18 +9,21 @@ header {
     border-bottom: 1px solid #424547;
 }
 
+/* Styling for titlen i navigationsbaren */
 .nav-title {
     font-size: 22px;
     color: #424547;
     padding-left: 1rem;
 }
 
+/* Styling for liste over menupunkter */
 .nav-list {
     z-index: 200;
     display: flex;
     gap: 2rem;
 }
 
+/* Styling for individuelle menupunkter */
 .nav-list-item {
     list-style-type: none;
     font-family: "Montserrat", sans-serif;
@@ -29,6 +33,7 @@ header {
     cursor: pointer;
 }
 
+/* Styling for links i menupunkter */
 .nav-list-item a {
     text-decoration: none;
     color: #424547;
@@ -36,11 +41,12 @@ header {
     padding: 45px 30px;
 }
 
+/* Skjuler nav-check elementet */
 header #nav-check {
     display: none;
 }
 
-/* undermenu */
+/* Styling for undermenu */
 .nav-sub-menu {
     display: none;
     position: absolute;
@@ -69,26 +75,32 @@ header #nav-check {
     display: block;
 }
   
+/* Styling for undermenupunkter */
 .nav-sub-menu-item {
     display: block;
     margin-top: 20px;
 }
 
+/* Styling for undermenupunkter ved hover */
 .nav-sub-menu-item:hover {
     text-decoration: underline;
     color: #424547;
 }
   
+/* Styling for links i undermenupunkter */
 .nav-sub-menu-item a {
     padding: 10px 10px;
     cursor: pointer;
 }
 
-/* Styling til mobil */
+/* Responsiv styling til mindre skærme */
 @media (max-width: 768px) {
+   /* Reducerer padding i header */
     header {
         padding: 1rem;
     }
+
+    /* Viser navigationsknap */
     .nav-btn {
         display: inline-block;
         position: absolute;
@@ -96,21 +108,26 @@ header #nav-check {
         top: 0;
         padding-top: 0.2rem;
     }
+
+    /* Styling for navigationsknapens label */
     .nav-btn label {
         display: inline-block;
         width: 50px;
         height: 50px;
         padding: 13px;
     }
+
+    /* Styling for navigationsknapens linjer */
     .nav-btn label span {
         display: block;
         width: 25px;
-        height: 3px; /* Ændret fra 10px til 3px */
-        margin-bottom: 5px; /* Tilføjet margin mellem linjerne */
+        height: 3px; 
+        margin-bottom: 5px; 
         background: #424547;
-        border-radius: 3px; /* Gør linjerne runde */
-        transition: all 0.3s ease-in-out; /* Tilføjet overgang */
+        border-radius: 3px; 
+        transition: all 0.3s ease-in-out; 
     }
+    /* Styling for navigationslisten på mobil */
     .nav-list {
         position: absolute;
         display: flex;
@@ -124,23 +141,29 @@ header #nav-check {
         left: 0;
         overflow: hidden;
     }
+    /* Styling for menupunkter på mobil */
     .nav-list-item {
         width: 100%;
         margin-top: 1.5rem;
     }
+    /* Tjekker om nav-check er aktiveret og ændrer navigationslistens højde */
     header #nav-check:checked ~ .nav-list {
         height: calc(100vh - 50px);
     }
+    /* Tjekker om nav-check er aktiveret og roterer den første linje */
     header #nav-check:checked ~ .nav-btn label span:nth-child(1) {
         transform: rotate(45deg) translate(7px, 6px);
     }
+    /* Tjekker om nav-check er aktiveret og gør den anden linje gennemsigtig */
     header #nav-check:checked ~ .nav-btn label span:nth-child(2) {
         opacity: 0;
     }
+     /* Tjekker om nav-check er aktiveret og roterer den tredje linje */
     header #nav-check:checked ~ .nav-btn label span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
+     /* Styling for undermenuen på mobil */
     .nav-sub-menu {
         display: block;
         max-height: 0; 
@@ -150,16 +173,20 @@ header #nav-check {
         font-size: 20px;
         margin-bottom: 12px;
     }
+    /* Styling for undermenuen ved hover på mobil */
     .nav-list-item:hover .nav-sub-menu,
     .nav-sub-menu:hover {
         max-height: 1000px; 
     }
+    /* Styling for undermenupunkter på mobil */
     .nav-sub-menu-item {
         margin-top: 10px;
     }
+    /* Fjerner tekstdekoration ved hover på mobil */
     .nav-list-item:hover{
         text-decoration: none;
     }
+     /* Fjerner tekstdekoration ved hover på undermenupunkter på mobil */
     .nav-sub-menu-item:hover {
         text-decoration: none;
     }

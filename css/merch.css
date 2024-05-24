@@ -1,3 +1,10 @@
+.background-top {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+  }
 /* Styling af container med klassen "boks" */
 .boks {
     display: flex;
@@ -38,6 +45,14 @@
 
 /* Media query for skærme op til 768px i bredden */
 @media (max-width: 768px) {
+
+.background-top {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    }
 .boks {
     flex-direction: column; /* Ændrer layout til lodret, når skærmstørrelsen er mindre end 768px */
 }

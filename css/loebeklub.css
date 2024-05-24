@@ -1,3 +1,11 @@
+.background-top {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+  }
+
 /* Styling af artiklelement med klassen "content" */
 article.content {
     display: flex;
@@ -31,6 +39,15 @@ figure img {
 
 /* Mobil layout */
 @media (max-width: 768px) {
+
+    .background-top {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100%;
+    }
+    
     article.content {
         flex-direction: column; /* Ændre layout til kolonne for mobil */
         max-width: 90%; /* Gør artiklen lidt bredere for bedre læsbarhed */

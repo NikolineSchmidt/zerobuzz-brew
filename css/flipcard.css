@@ -16,6 +16,15 @@ main {
   width: 100%;
 }
 
+.background-top {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+}
+
+
  /* Arrangere flip-cards i et flexbox layout, som tilpasser sig responsivt */
 .flip-cards {
   display: flex;
@@ -100,4 +109,12 @@ main {
   .flip-cards {
     flex-direction: column;
   }
+
+  .background-top {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+}
 }

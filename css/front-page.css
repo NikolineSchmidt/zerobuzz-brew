@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     height: 60vh;
     width: 100%;
-
 }
 
 /* Styling for informationssektionerne */
@@ -72,6 +71,14 @@
 /* Responsiv styling */
 /* Tilpasninger til mindre skærme */
 @media (max-width: 768px) {
+
+    .front-page-bg {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100%;
+    }
      /* Informationssektioner bruger kolonneretning og mindre lodret padding */
     .info-section {
         flex-direction: column-reverse;
@@ -87,6 +94,13 @@
     .info-section figure,
     .info-section .text {
         width: 100%;
+    }
+
+    .info-section img {
+        width: 90%;
+        height: auto;
+        border-radius: 20px;
+        margin-left: 20px;
     }
 
      /* Tekstsektionen får margin ovenpå */

@@ -10,11 +10,14 @@ header {
 }
 
 /* Styling for titlen i navigationsbaren */
-.nav-title {
+.nav-title a {
     font-size: 22px;
     color: #424547;
     padding-left: 1rem;
+    font-weight: bold;
+    text-decoration: none;
 }
+
 
 /* Styling for liste over menupunkter */
 .nav-list {
@@ -91,6 +94,31 @@ header #nav-check {
 .nav-sub-menu-item a {
     padding: 10px 10px;
     cursor: pointer;
+}
+
+button.basket {
+    /* Fjern standard styling */
+    all: unset;
+    /* Tilføj custom styling */
+    background-color: #536451; 
+    color: rgba(243, 233, 213, 1); 
+    padding: 10px 20px; /* Indvendig afstand */
+    border-radius: 5px; /* Runde hjørner */
+    cursor: pointer; /* Ændrer markøren til en hånd */
+    text-align: center; 
+    display: inline-block; /* Bevarer knapform */
+    font-size: 18px; /* Justerer tekststørrelsen */
+    right: 20px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #424547; /* Mørkere grøn ved hover */
+}
+
+button:focus {
+    outline: none; /* Fjerner fokus outline */
 }
 
 /* Responsiv styling til mindre skærme */

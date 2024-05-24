@@ -1,16 +1,18 @@
 /* Generel styling for forsiden */
 /* Billede i forside-sektionen fylder hele bredden og justeres automatisk i højde */
-.front-page img {
+.front-page-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
     width: 100%;
-    height: auto;
+
 }
 
 /* Styling for informationssektionerne */
 .info-sections {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
 }
 
 /* Styling for individuelle informationssektioner */
@@ -19,8 +21,17 @@
     flex-direction: row-reverse;
     align-items: center;
     gap: 2rem;
-    padding: 100px 0px;
+    padding: 100px 2rem;
 }
+
+#vissionmission {
+    background-color: #AB957F;
+}
+
+#starten {
+    background-color: #BEBC66;
+}
+
 
 /* Styling for figur-elementerne i informationssektionerne */
 .info-section figure {
@@ -38,6 +49,7 @@
 /* Styling for tekstsektionen i informationssektionerne */
 .info-section .text {
     width: 50%;
+    padding: 0 68px;
 }
 
 /* Styling for overskrifter i tekstsektionen */

@@ -7,11 +7,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66261e5300.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/loebeklub.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+    <header>
+        <input type="checkbox" id="nav-check">
+        <nav class="nav-title">
+            <a href="index.html">ZEROBUZZ BREW</a>
+        </nav>
+        <nav class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </nav>
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="#">WEBSHOP</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="servering.html">VORES ØL</a></li>
+                    <li class="nav-sub-menu-item"><a href="merch.html">MERCHANDISE</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">SMAGEKASSER</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">GAVEKORT</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">LOKATION</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#">HVOR KAN DU FINDE OS</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">EVENTS</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="loebeklub.html">LØBEKLUB</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">ØLSMAGNING</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">BRYG EN ØL</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">KOMMENDE EVENTS</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">B2B</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="#">VIL I SÆLGE VORES ØL?</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">SEND EN E-MAIL</a></li>
+                </ul>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">OM OS</a>
+                <ul class="nav-sub-menu">
+                    <li class="nav-sub-menu-item"><a href="index.html#vissionmission">VORES VISSION & MISSION</a></li>
+                    <li class="nav-sub-menu-item"><a href="index.html#holdet">BLIV EN DEL AF HOLDET</a></li>
+                    <li class="nav-sub-menu-item"><a href="index.html#starten">HVORDAN STARTET DET</a></li>
+                    <li class="nav-sub-menu-item"><a href="#">KONTAKT OS</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button class="basket">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </button>
+    </header>
     <main>
         <article class="content">
             <section>
@@ -36,5 +96,40 @@
             </figure>
         </article>
     </main>
+    <footer class="footer">
+        <section class="col">
+          <h2>Kontor</h2>
+          <ul>
+            <li>ZEROBUZZ BREW ApS</li>
+            <li>Fiskerivej 2D</li>
+            <li>8000, Aarhus C</li>
+          </ul>
+        </section>
+        <section class="col">
+          <h2>Information</h2>
+          <ul>
+            <li>10:00-15:00</li>
+            <li>+4511223344</li>
+            <li>info@zerobuzzbrew.dk</li>
+          </ul>
+        </section>
+        <section class="col newsletter">
+            <h2>Nyhedsbrev</h2>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Din email" required>
+              <button type="submit">Tilmeld</button>
+            </form>
+          </section>
+          <section class="col social">
+            <h2>Social</h2>
+            <ul>
+              <li><i class="fa-brands fa-square-instagram"></i></li>
+              <li><i class="fa-brands fa-square-facebook"></i></li>
+              <li><i class="fa-brands fa-square-youtube"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+          </section>
+        
+    </footer>
 </body>
 </html>

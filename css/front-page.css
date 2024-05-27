@@ -23,12 +23,13 @@
     padding: 100px 2rem;
 }
 
-#vissionmission {
-    background-color: #AB957F;
+
+#holdet{
+    background-color:#BEBC66 ;
 }
 
 #starten {
-    background-color: #BEBC66;
+    background-color: #AB957F;
 }
 
 
@@ -42,7 +43,6 @@
 .info-section img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 /* Styling for tekstsektionen i informationssektionerne */
@@ -99,7 +99,6 @@
     .info-section img {
         width: 90%;
         height: auto;
-        border-radius: 20px;
         margin-left: 20px;
     }
 

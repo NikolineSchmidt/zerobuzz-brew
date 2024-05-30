@@ -33,7 +33,6 @@ header {
 .nav-list-item {
     list-style-type: none;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     cursor: pointer;
@@ -62,7 +61,6 @@ header #nav-check {
     width: 100%;
     padding: 10px; /* Mindsk padding for at gøre undermenuen tættere på hovedmenupunktet */
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     font-size: 50px;
     font-style: normal;

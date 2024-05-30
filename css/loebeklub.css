@@ -20,12 +20,13 @@ article.content {
 /* Styling af sektions-elementer */
 section {
     width: 51%;
-    padding: -1px 40px; 
+    padding: 1px 40px; 
+
 }
 
 /* Styling af figur-elementer */
 figure{
-    margin: 0;
+    margin: -100px 0 0;
 }
 
 /* Styling af billeder inden for figurer */
@@ -60,5 +61,8 @@ figure img {
     figure img {
         width: 90%; /* Gør billedet fuld bredde */
         max-height: 100%; 
+    }
+    figure{
+        margin: 0;
     }
 }

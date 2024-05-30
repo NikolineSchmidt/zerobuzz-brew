@@ -1,6 +1,9 @@
 /* Hele menuen */
 /* Styling for header-elementet */
 header {
+    position: fixed;
+    z-index: 200;
+    top: 0;
     width: 100%;
     background-color: rgba(243, 233, 213, 1);
     display: flex;
@@ -174,6 +177,12 @@ button:focus {
         width: 100%;
         margin-top: 1.5rem;
     }
+
+    button.basket{
+        display: none;
+    }
+
+    
     /* Tjekker om nav-check er aktiveret og ændrer navigationslistens højde */
     header #nav-check:checked ~ .nav-list {
         height: calc(100vh - 50px);
